@@ -1,0 +1,16 @@
+.title
+{
+    margin-top: 20px;
+    text-align: center;
+}
+.card-box-container
+{
+    justify-content: space-around;
+}
+
+.card-box
+{
+    margin-top: 40px;
+    margin-right: 1px;
+    min-width: 350px;
+}

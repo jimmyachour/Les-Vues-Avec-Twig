@@ -1,0 +1,22 @@
+{% extends "base.html.twig" %}
+
+{% block title %}
+    <h2 class="title">Tous nos fruits</h2>
+{% endblock %}
+
+{% block content %}
+<div class="row card-box-container">
+    {% for product in products  %}
+
+        <div class="card col-1 col-md-3 card-box" style="width: 18rem;">
+            <img class="card-img-top img-card" src="./img/{{ product }}.png" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">{{ product|upper }}</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Voir les {{ product }}s</a>
+            </div>
+        </div>
+
+    {% endfor %}
+</div>
+{% endblock %}
